@@ -1,0 +1,23 @@
+{% block title %}Freelance Digital Designer and Front-end Developer Michael Cattell | Page not Found{% endblock %}
+{% block content %} 
+{% include "header_subpage" %} 
+{{ "instafeed.js" | asset_url | script_tag }}
+{{ "functions.js" | asset_url | script_tag }}
+<section class="about generic_opening" style="padding: 40px 0 00px;">
+  <div class="wrapper">
+  				
+	<h1 class="textcenter" style="font-size: 140px; padding: 40px 0 0;">Arrgh no way.</h1>
+
+	<div class="textcenter ">
+		<p class="font22">Ouch, well this is terribly terrible. Well it appears a link is not working, sorry about that.<br>I would recommend we never speak of this moment..</p>
+		<p><i>A little information - usually this page is called a "404 page".<br>This basically means the page you are looking for does not exist and therefore it pops up this error.</i></p>
+		<p>Why not visit the <a href="/">home page</a> and start again, or <a href="about">read more about me</a>, see the <a href="portfolio">work I've done</a>, or <a href="contact">talk to me</a></p>
+	</div>
+	<br>
+	<hr>
+			
+  </div>
+
+</section>
+
+{% endblock %}

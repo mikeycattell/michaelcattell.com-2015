@@ -1,0 +1,55 @@
+<style>
+
+p.contactinfo { padding: 12px 0 8px; margin: 0;  color:#bebdbd; font-family: "calluna-sans",sans-serif; font-style: normal; font-weight: 400;}
+p.contactinfo a { color: #fff; }
+nav.home { width: 100%; background: transparent; border-right: none; padding: 10px 150px 10px 10px; font-size: 18px; text-transform: uppercase; }
+.topcol_nav { width: 100%; border-bottom: 0px solid #f5f5f5; line-height: 20px; }
+nav.home { width: 100%; background: transparent; border-right: none; padding: 0px 0px 10px 100px; font-size: 18px; text-transform: uppercase; }
+nav.home ul li { list-style: none; float: left; text-align: center; border-left: 0px solid #fff; border-right: 0px solid #ccc; width: 20%; /* fallback for non-calc() browsers */ width: calc(100% / 5); box-sizing: border-box; } 
+nav.home ul li a { color: #fff; letter-spacing: 0px; }
+
+@media (max-width: 480px) {
+    nav.home { padding: 0; } 
+    nav.home ul li { float: left; width:auto; padding: 0 10px; } 
+}
+
+</style>
+
+<header style="position: relative;">
+   <hr class="behind" style="position: absolute; top: 46px;">
+   <div class="section group ">
+      <div class="col span_12_of_12 width100" style="margin-top: 0; padding-top: 0;">
+         <div class="herobig" style="position: relative;">
+            <div class="section group wrapper" style="padding-top: 10px;">
+               <div class="col span_1_of_4 width100">
+                  <h2 class="header anders" style=" color:#fff; font-size: 70px; padding-top: 27px;">MC</h2>
+               </div>
+               <div class="col span_3_of_4 width100 marginnoleft">
+                  <div class="topcol_nav text-right"  style="max-width: 816px;">
+                     <p class="contactinfo">+44 (0)7925 460880 <span class="hidemobile">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span> <a href="mailto:hello@michaelcattell.com">hello@michaelcattell.com</a></p>
+                  </div>
+                  <div class="bottomcol_nav text-left">
+                     <nav class="home"  style="max-width: 916px;">
+                        <ul>			  
+                           <li {% if mixture.url == "portfolio" %}class="active"{% endif %}><a href="portfolio" title="View my portfolio here">work</a></li>
+                           <li {% if mixture.url == "about" %}class="active"{% endif %}><a href="about" title="read more about me">about</a></li>
+                           <li {% if mixture.url == "about" %}class="active"{% endif %}><a href="about" title="read more about me">services</a></li>                           
+                           <li {% if mixture.url == "blog" %}class="active"{% endif %}><a href="blog" title="read more about me">blog</a></li>
+                           <li {% if mixture.url == "contact" %}class="active"{% endif %}><a href="contact" title="read more about me">contact</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+            <div class="wrapper">
+               <div class="headerplacer_home">
+                  <p class="header_desc">Portfolio of Michael Cattell</p>
+                  <p class="header_maindesc">Fresh, lively work for web & mobile</p>
+                  <h1 class="header_desc text-right">Digital Designer and Front-end Developer based in South Yorkshire, England</h1>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+

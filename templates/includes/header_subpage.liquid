@@ -1,0 +1,97 @@
+<style>
+nav[role="custom-dropdown"] ul > li {  background: #f7f7f7;}
+</style>
+
+<div class="viewport">
+
+            <div class="section group subpagebg">
+            	<div class="wrapper">
+               <div class="col span_1_of_4 width100 subpagepagenavbg">
+                  <h2 class="header anders wow fadeIn subpageMC"><a href="/">MC</a></h2>
+               </div>
+               <div class="col span_3_of_4 width100 marginnoleft homenav_contactwidth_margin">
+                  <div class="topcol_nav text-right homenav_contactwidth">
+                     <p class="contactinfo wow fadeInUp animate_steps2">+44 (0)7925 460880 <span class="hidemobile">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span> <a href="mailto:hello@michaelcattell.com">hello@michaelcattell.com</a></p>
+                  </div>
+                  <div class="height1"></div>
+                  <div class="bottomcol_nav text-left">
+
+
+					<nav role="custom-dropdown" class="home">
+					    <input type="checkbox" id="button" class="mobilenav">
+					    <label for="button" onclick><span class="mobilelabelshow">Menu</span></label>
+					    
+					    <ul>
+					       <li {% if mixture.url == "portfolio" %}class="active"{% endif %}><a href="portfolio" title="View my portfolio here">work</a></li>
+					       <li {% if mixture.url == "about" %}class="active"{% endif %}><a href="about" title="read more about me">about</a></li>
+					       <li {% if mixture.url == "services" %}class="active"{% endif %}><a href="services" title="read more about me">services</a></li>
+					       <li {% if mixture.url == "blog" %}class="active"{% endif %}><a href="http://michaelcattell.com/blog/" title="read more about me">blog</a></li>
+					       <li {% if mixture.url == "contact" %}class="active"{% endif %}><a href="contact" title="read more about me">contact</a></li>
+					    </ul>
+					</nav> 
+
+  <div id="cd-nav">
+    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+    <nav id="cd-main-nav">
+      <ul>
+      	<li {% if mixture.url == "index" %}class="active"{% endif %}><a href="index" title="go back to the home page here">home</a></li>
+       <li {% if mixture.url == "portfolio" %}class="active"{% endif %}><a href="portfolio" title="View my portfolio here">work</a></li>
+       <li {% if mixture.url == "about" %}class="active"{% endif %}><a href="about" title="read more about me">about</a></li>
+       <li {% if mixture.url == "services" %}class="active"{% endif %}><a href="services" title="read more about me">services</a></li>
+       <li {% if mixture.url == "blog" %}class="active"{% endif %}><a href="http://michaelcattell.com/blog/" title="read more about me">blog</a></li>
+       <li {% if mixture.url == "contact" %}class="active"{% endif %}><a href="contact" title="read more about me">contact</a></li>
+      </ul>
+    </nav>
+  </div>					 
+
+                  </div>
+               </div>
+            </div>   
+            </div>       
+
+</div>
+
+
+<!--
+<header style="position: relative;">
+<hr class="behind_sub" style="position: absolute; top: 46px;">
+
+
+
+		<div class="section group" style="background: #f7f7f7;">
+
+			<div class="wrapper">
+			<div class="col span_3_of_12 width100" style="background: #fff; position: relative; margin: 0; padding: 11px 0 18px;">
+			<h2 class="header anders blacktxt wow fadeIn" style="  font-size: 70px; padding-top: 27px;"><a href="/">MC</a></h2>
+			</div>
+			<div class="col span_9_of_12 width100 marginnoleft">
+			<div class="topcol_nav text-right">
+				<p class="contactinfo">+44 (0)7925 460880 <span class="hidemobile">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span> <a href="mailto:hello@michaelcattell.com">hello@michaelcattell.com</a></p>
+			</div>
+			<div class="bottomcol_nav text-left">
+				<nav class="generic">
+				  <ul>					  
+            		<li {% if mixture.url == "portfolio" %}class="active"{% endif %}><a href="portfolio" title="View my portfolio here">work</a></li>
+            		<li {% if mixture.url == "about" %}class="active"{% endif %}><a href="about" title="read more about me"><span class="activetab">about</span></a></li>
+            		<li {% if mixture.url == "blog" %}class="active"{% endif %}><a href="blog" title="read more about me">blog</a></li>
+            		<li {% if mixture.url == "contact" %}class="active"{% endif %}><a href="contact" title="read more about me">contact</a></li>
+				  </ul>
+				</nav>
+			</div>
+			</div>
+		</div>
+
+</div>
+	
+	</div>
+</header>
+
+<style>
+
+hr.behind { border-color: #e6e6e6; width: 100%;}
+p.contactinfo {padding: 12px 0 8px; margin: 0;  color:#bebdbd; font-family: "calluna-sans",sans-serif; font-style: normal; font-weight: 400;}
+nav.generic ul li.active a span.activetab { border-bottom: 3px solid #999; }
+
+</style>
+-->

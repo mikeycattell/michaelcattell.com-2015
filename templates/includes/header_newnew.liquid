@@ -1,0 +1,55 @@
+
+<div class="viewport">
+<hr class="behind">
+            <div class="section group wrapper paddingtop10">
+               <div class="col span_1_of_4 width100 homepagenavbg">
+                  <h2 class="header anders wow fadeIn blacktxt">MC</h2>
+               </div>
+               <div class="col span_3_of_4 width100 marginnoleft">
+                  <div class="topcol_nav text-right homenav_contactwidth">
+                     <p class="contactinfo wow fadeInUp animate_steps4">+44 (0)7925 460880 <span class="hidemobile">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span> <a href="mailto:hello@michaelcattell.com">hello@michaelcattell.com</a></p>
+                  </div>
+                  <div class="height1"></div>
+                  <div class="bottomcol_nav text-left">
+
+
+<nav role="custom-dropdown" class="home">
+    <input type="checkbox" id="button" class="mobilenav">
+    <label for="button" onclick><span class="mobilelabelshow">Menu</span></label>
+    
+    <ul>
+       <li {% if mixture.url == "portfolio" %}class="active"{% endif %}><a href="portfolio" title="View my portfolio here">work</a></li>
+       <li {% if mixture.url == "about" %}class="active"{% endif %}><a href="about" title="read more about me">about</a></li>
+       <li {% if mixture.url == "services" %}class="active"{% endif %}><a href="services" title="read more about me">services</a></li>
+       <li {% if mixture.url == "blog" %}class="active"{% endif %}><a href="http://michaelcattell.com/blog/" title="read more about me">blog</a></li>
+       <li {% if mixture.url == "contact" %}class="active"{% endif %}><a href="contact" title="read more about me">contact</a></li>
+    </ul>
+</nav>  
+
+
+  <div id="cd-nav">
+    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+    <nav id="cd-main-nav">
+      <ul>
+       <li {% if mixture.url == "portfolio" %}class="active"{% endif %}><a href="portfolio" title="View my portfolio here">work</a></li>
+       <li {% if mixture.url == "about" %}class="active"{% endif %}><a href="about" title="read more about me">about</a></li>
+       <li {% if mixture.url == "services" %}class="active"{% endif %}><a href="services" title="read more about me">services</a></li>
+       <li {% if mixture.url == "blog" %}class="active"{% endif %}><a href="http://michaelcattell.com/blog/" title="read more about me">blog</a></li>
+       <li {% if mixture.url == "contact" %}class="active"{% endif %}><a href="contact" title="read more about me">contact</a></li>
+      </ul>
+    </nav>
+  </div>
+                  </div>
+               </div>
+            </div>          
+
+            <section class="hero" role="banner">
+              <img class="hero-img wow fadeInDown animate_steps2" src="{{ "img/header/homepageheader_31.jpg" | asset_url }}" alt="">
+              <h1 class="hidemobile no-margin wow fadeInLeft animate_steps3" style=" text-transform: none; font-weight: 400; line-height: auto;">I <i>design</i> and <i>develop</i> fresh, unique and lively designs for web and mobile
+              </h1>
+            </section>
+
+</div>
+
+

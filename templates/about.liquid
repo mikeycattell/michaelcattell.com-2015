@@ -1,0 +1,86 @@
+{% block title %}Freelance Digital Designer and Front-end Developer Michael Cattell | About{% endblock %}
+{% block content %} 
+{% include "header_subpage" %} 
+
+<section class="about generic_opening">
+  <div class="wrapper">
+    <div class="section group">
+      <div class="col span_5_of_12 aboutwidth100 textcenter"> <img src="{{ "about_profilepic_mikeycattell.jpg" | asset_url }}" alt="" class="img-responsive" /> </div>
+      <div class="col span_7_of_12 paddingleft30 aboutwidth100 paddingtop30">
+        <h1 class="aboutme marginleft160 wow fadeInLeft animate_steps1">Nice to meet you</h1>
+        <p>I’m Michael. You can call me Michael, Mike or Mikey. I live in a small town called Doncaster in South Yorkshire. I have worked all around England, with a prolonged stopover in Orange County, California - which part of me still considers home. </p>
+        <p>I’ve worked with small to large agencies, “mama and papa” companies to full blown companies with their own coffee machines and Spotify playlists.</p>
+        <p>I like to think I specialise in interface and experience design, combining digital craftsmanship with innovative thinking to deliver user-first digital solutions.</p>
+      </div>
+      <div class="height1"></div>
+      <div class="col span_12_of_12 paddingleft40 firstfix"> 
+        <p>I am very passionate with all the work I do, some could say borderline obsessive (Is there really a difference?). <br>
+          I’ve been doing this for about 10 years now, either riding solo, part of teams, inside wonderful agencies based all over England with lovely coffee. What this means is, I’ve seen a lot, created a lot, sworn a lot and typed a lot of code, but wouldn’t change a thing.</p>
+        <p>I don’t pretend to do everything, and I'm very honest about this, but what I can promise is a product of the highest standard which you can use and be proud of. I specialise in design, development (front-end development), guidance and support, which when all added up give you the complete experience to launch a great product.</p>
+        <p class="portfolio_jobdesc"><strong>To find out how I can help you, feel free to <a href="contact" title="To find out how I can help you, feel free to email me here">email me</a> or call me on +44 (0)7925 460880</strong></p>
+        <p><strong>Stay connected</strong>. Follow me on <a href="https://twitter.com/mikeycattell" class="twitter" title="follow me on twitter to catch my latest ramble">Twitter</a>, <a href="https://dribbble.com/mikeycattell" class="dribbble" title="click to see my latest shots on dribbble">Dribbble</a>, <a href="https://uk.linkedin.com/in/michaelcattell" class="linkedin" title="have a look at my work experience in full">LinkedIn</a>, and <a href="https://instagram.com/mikeycattell/" class="instagram" title="my latest pictures on instagram">Instagram</a>.</p>
+      </div>
+      <!--<div class="col span_1_of_3 firstfix aboutwidth100">
+        <h3 class="whatido">My thing</h3>
+        <ul class="about_dos">
+          <li>Web design and development</li>
+          <li>Desktop, mobile and multiscreen design</li>
+          <li>E-Commerce consultation and design</li>
+          <li>Transform UI designs into HTML / CSS</li>
+          <li>Leadership of a team</li>
+        </ul>
+      </div>
+      <div class="col span_1_of_3 aboutwidth100">
+        <h3 class="whatido">The technicals</h3>
+        <ul class="about_dos">
+          <li>HTML (5), CSS (3) and jQuery</li>
+          <li>Styling Magento, Kohana, CakePHP, Yii and Wordpress websites</li>
+          <li>Bootstrap, Foundation and custom responsive builds</li>
+          <li>Usage of SVN and Git(hub)</li>
+        </ul>
+      </div>
+      <div class="col span_1_of_3 aboutwidth100">
+        <h3 class="whatido">The guys and gals I like to work with</h3>
+        <ul class="about_dos">
+          <li>Small to big businesses / agencies</li>
+          <li>Start-ups and local businesses</li>
+          <li>The movers and shakers</li>
+          <li>All dog owners just <a href="https://instagram.com/fancyralph_/" title="click here to view my dogs instagram" class="instagram" target="_blank">'cos</a></li>
+          <li><a href="contact" title="get in touch and we can make design magic">You</a></li>
+        </ul>
+      </div>-->
+      <div class="height10"></div>
+      <div class="col span_7_of_12 firstfix aboutwidth100">
+        <div id="instafeed"></div>
+      </div>
+      <div class="height20 showmobile"></div>
+      <div class="col span_5_of_12 hideunder677"> <img src="{{ "about_desktopright.jpg" | asset_url }}" alt="" class="" /> </div>
+      <div class="height30"></div>
+      <div class="col span_12_of_12 paddingleft40 firstfix">
+        <p class="font24"><strong>If you want to get to know me further beyond this little bio, these people wrote some very kind pieces about me:</strong></p>
+
+            <blockquote>
+              <p>Michael is one of the most resourceful and analytical professionals in his industry who is always ahead of the next move and will not risk his clients project by trying something unproven. He will make sure what is launched is 110% effective, stable and working.</p>
+              <cite><strong>Sevag Sarkissian</strong> - Marketing Consultant </cite> </blockquote>
+
+        <div class="height20"></div>
+
+            <blockquote>
+              <p>Attention to detail, creative, lots of energy, pro-active, easy to work with and a good sense of humor - you need that when you work together for long hours and many projects!</p>
+              <cite><strong>Guillermo Gette</strong> - Software Engineer</cite> </blockquote>
+
+        <div class="height20"></div>
+
+            <blockquote>
+              <p>Michael is a talented and expert designer who has the skills and knowledge to not only produce wonderful works but also recommend better solutions to enhance the project if needed. Always generous with his time, talent, and humour.</p>
+              <cite><strong>Christine Le</strong> - Project Manager of Marketing Campaigns</cite> </blockquote>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ "functions.js" | asset_url | script_tag }}
+{{ "instafeed.js" | asset_url | script_tag }}
+
+{% endblock %}

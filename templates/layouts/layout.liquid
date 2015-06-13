@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Title block allowing child pages to override -->
+        <meta charset="utf-8">
+        <title>{% block title %}Empty{% endblock %}</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        <!-- Styles -->
+        {{ "col.css" | asset_url | stylesheet_tag }}
+        {{ "2cols.css" | asset_url | stylesheet_tag }}
+        {{ "3cols.css" | asset_url | stylesheet_tag }}   
+        {{ "4cols.css" | asset_url | stylesheet_tag }}
+        {{ "5cols.css" | asset_url | stylesheet_tag }}
+        {{ "6cols.css" | asset_url | stylesheet_tag }}  
+        {{ "7cols.css" | asset_url | stylesheet_tag }}
+        {{ "8cols.css" | asset_url | stylesheet_tag }}
+        {{ "9cols.css" | asset_url | stylesheet_tag }}  
+        {{ "10cols.css" | asset_url | stylesheet_tag }}
+        {{ "11cols.css" | asset_url | stylesheet_tag }}
+        {{ "12cols.css" | asset_url | stylesheet_tag }}  
+
+        {{ "animate.css" | asset_url | stylesheet_tag }}  
+                                         
+        {{ "html5reset.css" | asset_url | stylesheet_tag }}                
+        {{ "app.css" | asset_url | stylesheet_tag }} 
+        {{ "mc.css" | asset_url | stylesheet_tag }}       
+        <!-- Style block allowing child pages to inject their own styles -->
+        {% block styles %}{% endblock %}
+        <script src="//use.typekit.net/ytq8wll.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        
+        {{ "jquery.jribbble-1.0.1.js" | asset_url | script_tag }}
+        {{ "modernizr.js" | asset_url | script_tag }}
+        {{ "jquery-2.1.3.min.js" | asset_url | script_tag }}
+        
+    </head>
+
+    <body>
+        {% block content %}{% endblock %}
+        {% include "footer" %}
+        {% block scripts %}{% endblock %}
+        {{ "main.js" | asset_url | script_tag }}
+        {{ "wow.js" | asset_url | script_tag }}
+
+        <script>
+         new WOW().init();
+        </script>
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15536515-1', 'auto');
+  ga('send', 'pageview');
+
+</script>       
+    </body>
+</html>

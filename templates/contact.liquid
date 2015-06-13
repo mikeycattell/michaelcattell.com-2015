@@ -1,0 +1,69 @@
+{% block title %}Freelance Digital Designer and Front-end Developer Michael Cattell | Contact{% endblock %}
+{% block content %} 
+{% include "header_subpage" %} 
+
+<section class="about portfolio generic_opening">
+	<div class="wrapper">
+		<div class="textcenter">
+			<div class="maxwidth600 centeritems textcenter">
+				<h1 class="textcenter">Contact</h1>
+				<p class="font20"><strong>For General Enquiries:</strong> +44 (0)7463 966691<br><a href="mailto: hello@michaelcattell.com">hello@michaelcattell.com</a></p>
+				<p>I would love to discuss your project with you, no matter its state of existence, concept, or budget give me a holler!</p>
+			</div>
+		</div>	
+
+	    <div class="section group" style="margin: 0 auto;">
+        	<form action="contact.php" method="post">
+
+		        <div class="col span_6_of_12 width100">
+		          <label>Name *</label>
+		          <input id="mc_name" class="col-xs-12 nopaddingoutter borderbottomonly" name="mc_name" type="text" value="" placeholder="" required/>
+		        </div> 
+
+		        <div class="col span_6_of_12 width100">
+		          <label>Email Address *</label>
+		          <input id="mc_email" class="col-xs-12 nopaddingoutter borderbottomonly" name="mc_email" type="email" value="" placeholder="" required/>
+		        </div>
+
+		        <label>Your Message *</label>
+				<textarea id="message" class=" borderbottomonly" name="mc_message" placeholder="Start typing here..." style="height: 190px;" required></textarea>
+				
+				<button id="contact-submit" type="submit" value="Send" class="btn submit pull-right" style="">Send</button>  			          
+        		
+        		<div class="height10"></div> 
+      
+          
+		   </form> 
+		</div>
+	</div>
+</section>
+
+
+
+	<style>
+
+	
+
+
+	</style>
+
+
+<section>
+	<div class="wrapper">
+		<div class="height30"></div>
+		<h4>What they say</h4>
+		<blockquote>
+			<p>Michael is one of the most resourceful and analytical professionals in his industry who is always ahead of the next move & will not risk his clients project by trying something unproven. He will make sure what is launched is 110% effective, stable and working.</p>
+			<cite>Sevag Sarkissian</cite>
+		</blockquote>
+		<div class="height30"></div>
+		<blockquote>
+			<p>Attention to details, creative, lot of energy, pro active, easy to work with and good sense of humor (you need that when you work together for long hours).</p>
+			<cite>Guillermo Gette</cite>
+		</blockquote>
+	</div>
+</section>
+
+
+
+{% endblock %}
